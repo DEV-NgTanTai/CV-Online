@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+	<title>Đăng Nhập Nội Bộ</title>
+        <link rel="stylesheet" type="text/css" href="./knock/login.css">
+    </head>
+    <body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form onsubmit="return login(event)">
+                    <h2>Đăng Nhập</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="text" name="username" id="username"  class="form-doing" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="password" placeholder="Password" class="form-doing" required>
+                        <label>Password</label>
+                    </div>
+		    <div class="forget">
+                        <label><input type="checkbox" onclick="ShowPassword()">Show Password</label>
+                    </div>
+		<script>
+			function ShowPassword() {
+ 			var x = document.getElementById("password");
+ 			if (x.type === "password") {x.type = "text"; } else {  x.type = "password"; }}
+		</script>
+                    <button>Log In</button>
+                    <div class="register">
+                        <p>Don't have an account? <a href="./Index.html">Back</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ion-icon installation: Start -->
+   	 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   	 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--ion-icon installation: End-->
+
+
+    </body>
+    <script src="./knock/users.js"></script>
+    <script src="./knock/login.js"></script>
+</html>
