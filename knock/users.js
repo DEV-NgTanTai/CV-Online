@@ -6,12 +6,12 @@ var admins = [
     },
     {
         name: "NgTanTai",
-        password: "Tài Khoản",
+        password: "Tai Khoan",
         url: "Account.html"
     },
     {
         name: "NgTanTai",
-        password: "Bằng Cấp",
+        password: "Bang Cap",
         url: "Learning.html"
     },
    
